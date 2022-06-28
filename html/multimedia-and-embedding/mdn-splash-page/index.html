@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -112,9 +112,6 @@
         <iframe src="https://www.youtube.com/embed/ojcNcvb1olg"
                 width="400" height="225" title="YouTube video player" frameborder="0" allowfullscreen
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
-        <p>Your browser doesn't support this video player, you can choose to   
-          <a href="https://www.youtube.com/watch?v=ojcNcvb1olg">open in YouTube</a>
-        </p>
         </iframe>
 
         <h2>Rocking the free web</h2>
@@ -131,21 +128,24 @@
                        firefox_logo-only_RGB-width_400px.png 400w"
                sizes="(max-width: 500px) 120px,
                       400px"
-               src="firefox-addons-width_400px.jpg">
+               src="firefox_logo-only_RGB-width_400px.png"
+               alt="Firefox logo">
         </a>
         <a href="https://www.mozilla.org/">
           <img srcset="mozilla-dinosaur-head-width_120px.png 120w,
                        mozilla-dinosaur-head-width_400px.png 400w"
                sizes="(max-width: 500px) 120px,
                       400px"
-               src="mozilla-dinosaur-head-width_400px.png">
+               src="mozilla-dinosaur-head-width_400px.png"
+               alt="Mozilla dinosaur head logo">
         </a>
         <a href="https://addons.mozilla.org/">
           <img srcset="firefox-addons-width_120px.jpg 120w,
                        firefox-addons-width_400px.jpg 400w"
                sizes="(max-width: 500px) 120px,
                       400px"
-               src="firefox-addons-width_400px.jpg">
+               src="firefox-addons-width_400px.jpg"
+               alt="Firefox addons logo">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
           <img src="mdn.svg"
@@ -156,6 +156,11 @@
 
       <div class="red-panda">
         <!-- insert picture element -->
+        <picture>
+          <source media="(max-width: 600px)" srcset="red-panda-cropped-width_600.jpg">
+          <source media="(min-width: 601px)" srcset="red-panda-width_1200.jpg">
+          <img src="red-panda-width_1200.jpg" alt="A red panda sitting on a tree">
+        </picture>
       </div>
 
     </main>
