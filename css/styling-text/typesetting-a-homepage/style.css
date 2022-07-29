@@ -1,0 +1,176 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* MY CODE BELOW HERE */
+
+/* Fonts */
+
+@font-face {
+  font-family: 'source-sans-pro';
+  src: url('fonts/webfont-kit/sourcesanspro-regular-webfont.woff2') format('woff2'),
+       url('fonts/webfont-kit/sourcesanspro-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'libre-baskerville';
+  src: url('fonts/webfont-kit/librebaskerville-regular-webfont.woff2') format('woff2'),
+       url('fonts/webfont-kit/librebaskerville-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'libre-baskerville', serif;
+}
+
+h1,
+h2,
+nav {
+  font-family: 'source-sans-pr0', sans-serif;
+}
+
+/* General text styling */
+
+html {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+h2, 
+nav li {
+  font-size: 1.7rem;
+}
+
+p, 
+section li, 
+aside li {
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  word-spacing: 0.05em;
+}
+
+p,
+li {
+  line-height: 1.5;
+}
+
+section h2 + p {
+  text-indent: 2em;
+}
+
+/* Links */
+
+a {
+  outline: none;
+}
+
+a[href^="http"] {
+  background: url(external-link-52.png) no-repeat;
+  background-position: 100% 0;
+  background-size: 0.8em 0.8em;
+  padding-right: 1em;
+}
+
+a:focus, 
+a:hover {
+  text-decoration: none;
+}
+
+a:link, 
+a:focus, 
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: #a66;
+}
+
+a:active {
+  color: grey;
+}
+
+/* Navigation menu */
+
+nav ul {
+  border: 3px dotted #a66;
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+nav li {
+  line-height: 3;
+  border-left: 1.5px solid #a66;
+  text-align: center;
+  margin: 1em 1.5em;
+}
+
+nav li:hover {
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:link, 
+nav a:focus, 
+nav a:visited {
+  color: #a66;
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav a:active {
+  color: grey;
+}
